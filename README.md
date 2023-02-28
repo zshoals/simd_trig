@@ -4,13 +4,21 @@
 (Mostly) Implementation-agnostic SIMD trigonometry functions
 
 :::   Exp    :::
+
 :::   Log    :::
+
 :::   Sin    :::
+
 :::   Cos    :::
+
 :::   Tan    :::
+
 :::   Cot    :::
+
 :::   Atan   :::
+
 :::   Atan2  :::
+
 
 Uses SSE2 semantics. No special optimizations made for
 particular SIMD instruction sets. This is intended to be
@@ -36,4 +44,5 @@ but am doing so just to avoid licensing problems.
 
 
 License: zlib
+
 See simd_trig.h for more details
