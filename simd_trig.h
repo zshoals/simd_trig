@@ -4,14 +4,20 @@
 
 	(Mostly) Implementation-agnostic SIMD trigonometry functions
 
-	:::   Exp    :::
-	:::   Log    :::
-	:::   Sin    :::
-	:::   Cos    :::
-	:::   Tan    :::
-	:::   Cot    :::
-	:::   Atan   :::
-	:::   Atan2  :::
+	Types:
+	* float32x4 equivalent ---- simd_fq ("float quad")
+	* int32x4 equivalent ------ simd_iq ("int quad")
+	* uint32x4 equivalent ----- simd_uq ("unsigned int quad")
+
+	Functions:
+	* sin ---- simd_fq_sin
+	* cos ---- simd_fq_cos
+	* tan ---- simd_fq_tan
+	* cot ---- simd_fq_cot
+	* atan --- simd_fq_atan
+	* atan2 -- simd_fq_atan2
+	* exp ---- simd_fq_exp
+	* log ---- simd_fq_log
 
 	Uses SSE2 semantics. No special optimizations made for
 	particular SIMD instruction sets. This is intended to be
